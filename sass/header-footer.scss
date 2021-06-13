@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$font1: 'Hammersmith One', sans-serif;
+$font2: 'Kanit', sans-serif;
+.header-T{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    font-family: $font1;
+    ul{
+        display: flex;
+        position: absolute;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            align-items: center;
+            height: 20px;
+            gap: 50px;
+            li{
+                display: flex;
+                a{
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #000;
+                }
+                a:hover{
+                    color: rgb(247, 128, 128);
+                }
+            }
+            .btn-c{
+                display: flex;
+                gap: 15px;
+                .btn-h{
+                    border-radius: 5px;
+                    border: 1px solid #fff0;
+                    padding: 5px 10px;
+                    font-family: inherit;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #000;
+                    transform: scale(1);
+                    transition: all 0.2s ease-out 0s;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .btn-h:hover{
+                color: rgb(247, 128, 128);
+                border-color: rgb(247, 128, 128);
+                transform: scale(0.9);
+            }
+        }
+        img{
+            border-radius: 50%;
+            height: 100px;
+            width: auto;
+        }
+    }
+}
+.footer-T{
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #c5c5c566;
+    .color-Footer{
+        display: flex;
+        padding: 20px 0px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+        div{
+            width: 395px;
+            img{
+                width: 120px;
+                height: auto;
+            }
+            h1{
+                font-size: 14px;
+                color: #000;
+            }
+            p{
+                font-size: 14px;
+                line-height: 1.8em;
+                color: rgb(112, 112, 112);
+            }
+            h2{
+                line-height: 1.4em;
+                padding: 0px 0px 10px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #333333;
+                margin: 0px;
+            }
+            .color-line-f{
+                width: 50px;
+                height: 4px;
+                border-radius: 5px;
+                background: #f78080;
+                padding: 0px;
+                margin-bottom: 50px;
+            }
+            .grid-f{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px;
+                img{
+                    cursor: pointer;
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .cn-destacados{
+                display: flex;
+                div{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    a{
+                        padding: 5px 0;
+                        background: #fff;
+                        color: #000;
+                        font-size: 13px;
+                        color: #777777;
+                        line-height: 24px;
+                    }
+                    a:hover{
+                        color: #f78080;
+                        transition: all 0.2s ease-out 0s;
+                    }
+                }
+            }
+            h2{
+                padding: 15px 0;
+            }
+            .social-F{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    background: #f78080;
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    border: 2px solid #f78080; 
+                    transition: all 0.2s ease-out 0s;
+                }
+                a:hover{
+                    background: none;
+                    color: #f78080;
+                }
+            }
+        }
+        .instagram-F{
+            width: 290px;
+        }
+    }
+}
