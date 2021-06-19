@@ -1,5 +1,84 @@
+$font1: 'Hammersmith One', sans-serif;
+$font2: 'Kanit', sans-serif;
 .header-T{
     ul{
+        width: 100%;
         position: initial !important;
+    }
+}
+.maps{
+    padding: 3px 0px;
+    height: 450px;
+    background: linear-gradient(to top right, #f78080bd, #f780ed79);
+}
+.form{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 8% 0px;
+    display: flex;
+    gap: 50px;
+    &-contact{
+        display: flex;
+        flex-direction: column;
+        h1{
+            color: rgb(247, 128, 128);
+            text-shadow: 3px 3px 6px #f78080;
+            font-size: 45px;
+            font-weight: 600;
+        }
+        p{
+            font-weight: 400;
+            text-shadow: 1px 3px 6px #000;
+        }
+        .info{
+            padding: 10% 0;
+            p{
+                display: flex;
+                align-items: center;
+                padding: 2% 0px;
+                gap: 10px;
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    form{
+        display: flex;
+        width: 55%;
+        gap: 3%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        textarea,
+        input{
+            font-family: $font1;
+            width: 95%;
+            padding: 2.2%;
+            border: none;
+            border-bottom: 1px solid #f78080;
+            box-shadow: 3px 3px 6px #f78080;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid #f78080;
+            box-shadow: 3px 3px 6px #f78080;
+        }
+        input:last-child{
+            width: 25%;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform: scale(1);
+            transition: all 0.5s ease-out 0s;
+        }
+        input:last-child:hover{
+            background: #f78080;
+            color: #fff;
+            margin-left: 10px;
+            transform: scale(1.1);
+            border-bottom: 1px solid #f78080;
+            box-shadow: 3px 3px 6px #000;
+        }
     }
 }
