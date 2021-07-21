@@ -216,4 +216,28 @@ body::-webkit-scrollbar-thumb {
           .container-P .product-2 .contenedor-t .container-Tb2 a:hover {
             background: linear-gradient(to top right, #f78080, #f780eeab); }
 
+@media screen and (max-width: 320px) {
+  .content-T {
+    width: 70% !important;
+    height: 75% !important;
+    right: 15% !important; }
+
+  .product-1,
+  .product-2 {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr;
+    height: 590px !important; }
+
+  .container-Tb,
+  .container-Tb2 {
+    height: 90% !important;
+    width: 65% !important;
+    top: 5% !important; }
+    .container-Tb h1,
+    .container-Tb2 h1 {
+      text-align: center; }
+
+  .contenedor-product {
+    width: 100% !important; } }
+
 /*# sourceMappingURL=style.css.map */
