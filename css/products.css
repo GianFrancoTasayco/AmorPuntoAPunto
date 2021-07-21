@@ -1,4 +1,222 @@
-.header-T ul {
-  position: initial !important; }
+@charset "UTF-8";
+.header-T {
+  width: 100%;
+  box-shadow: 3px 3px 6px #f78080; }
+  .header-T ul {
+    position: initial !important; }
+
+.filter-shop {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  gap: 30px; }
+  .filter-shop .filter {
+    width: 25%; }
+    .filter-shop .filter h1 {
+      background: #ffeadc;
+      font-size: 14px;
+      padding: 10px 0px;
+      letter-spacing: 1px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300;
+      text-align: center; }
+    .filter-shop .filter .card,
+    .filter-shop .filter .categories {
+      border-bottom: dotted 1px #000;
+      margin-bottom: 15px; }
+    .filter-shop .filter .card p {
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 20px 0px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300; }
+    .filter-shop .filter .categories option {
+      position: relative;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 10px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300;
+      cursor: pointer; }
+    .filter-shop .filter .categories option:hover {
+      color: #fbc5ab;
+      transition: all 0.5s ease-out 0s; }
+    .filter-shop .filter .categories option::before {
+      content: "•";
+      position: absolute;
+      display: block;
+      left: 0px;
+      color: #f78080;
+      top: 15%;
+      font-size: 18px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300; }
+    .filter-shop .filter .categories option::after {
+      content: "»";
+      position: absolute;
+      display: block;
+      right: 0px;
+      color: #f78080;
+      top: 15%;
+      font-size: 18px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300; }
+    .filter-shop .filter .filter-P .slider-ui {
+      position: relative;
+      width: 100%;
+      height: 25px;
+      margin: 20px 0; }
+    .filter-shop .filter .filter-P .slider-ui input {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      cursor: pointer;
+      opacity: 0; }
+    .filter-shop .filter .filter-P .slider-ui .bar {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #000;
+      border-radius: 50px;
+      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1); }
+    .filter-shop .filter .filter-P .slider-ui .min,
+    .filter-shop .filter .filter-P .slider-ui .max {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      font-weight: 800;
+      color: #fff; }
+    .filter-shop .filter .filter-P .slider-ui .min {
+      left: 2%; }
+    .filter-shop .filter .filter-P .slider-ui .max {
+      right: 2%; }
+    .filter-shop .filter .filter-P .slider-ui .track {
+      position: absolute;
+      z-index: 3;
+      left: 12px;
+      right: 12px;
+      top: 0;
+      bottom: 0; }
+    .filter-shop .filter .filter-P .slider-ui .value {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 800;
+      color: #f78080;
+      background-color: #fff;
+      border: 4px solid #000;
+      border-radius: 100%;
+      box-sizing: border-box;
+      transform: translateX(-50%);
+      transition: top .3s ease-in-out, color .3s ease-in-out; }
+    .filter-shop .filter .filter-P .slider-ui .value.up {
+      top: -110%;
+      color: #000; }
+      .filter-shop .filter .filter-P .slider-ui .value.up .slider-ui .min,
+      .filter-shop .filter .filter-P .slider-ui .value.up .slider-ui .max {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        font-weight: 800;
+        color: #fff; }
+    .filter-shop .filter .filter-P .slider-ui.color1 .bar {
+      background-color: #ff9595a8; }
+    .filter-shop .filter .filter-P .slider-ui.color1 .value {
+      border-color: #ff9595a8; }
+    .filter-shop .filter .filter-P .btn-p {
+      display: flex;
+      justify-content: space-between; }
+      .filter-shop .filter .filter-P .btn-p input {
+        width: 25%;
+        cursor: pointer;
+        font-family: "Hammersmith One", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transform: scale(1);
+        transition: all 0.5s ease-out 0s;
+        padding: 2.2%;
+        border: none;
+        border-bottom: 1px solid #f78080;
+        box-shadow: 3px 3px 6px #f78080; }
+      .filter-shop .filter .filter-P .btn-p input:hover {
+        background: #f78080;
+        color: #fff;
+        transform: scale(1.1);
+        border-bottom: 1px solid #f78080;
+        box-shadow: 3px 3px 6px #000; }
+      .filter-shop .filter .filter-P .btn-p p {
+        position: relative;
+        padding-right: 60px; }
+      .filter-shop .filter .filter-P .btn-p p::after {
+        content: "50";
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0px; }
+  .filter-shop .shop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%; }
+    .filter-shop .shop .banner {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffeadc; }
+      .filter-shop .shop .banner h1 {
+        background: #ffeadc;
+        font-size: 30px;
+        padding: 10px 0px;
+        letter-spacing: 1px;
+        font-family: "Hammersmith One", sans-serif;
+        font-weight: 300;
+        text-align: center; }
+    .filter-shop .shop .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 20px; }
+      .filter-shop .shop .products .styleP {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .filter-shop .shop .products .styleP img {
+          width: 200px;
+          height: 200px; }
+        .filter-shop .shop .products .styleP p {
+          margin: 10px 0px;
+          font-family: "Kanit", sans-serif;
+          text-transform: capitalize; }
+        .filter-shop .shop .products .styleP input {
+          border: none;
+          padding: 5px 20px;
+          background: #f78080;
+          color: #fff;
+          font-family: "Hammersmith One", sans-serif;
+          letter-spacing: 2px;
+          font-size: 15px;
+          text-decoration: none;
+          font-weight: 700;
+          text-transform: uppercase;
+          transition: all 0.5s ease-out 0s; }
+        .filter-shop .shop .products .styleP input:hover {
+          background: linear-gradient(to top right, #f78080, #f780eeab); }
 
 /*# sourceMappingURL=products.css.map */
